@@ -1,0 +1,6 @@
+version: '3'
+services:
+  web:
+    image: @@HOST@@/@@REPOSITORY@@:@@SERVICE@@-@@VERSION@@
+    ports:
+    - '8000:8000'
