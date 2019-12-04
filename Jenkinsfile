@@ -25,6 +25,10 @@ node {
             sh './ci/gen-image.sh'
         }
 
+        stage ('Confirm') {
+            input ('Do you want to deploy')
+        }
+
         stage ('Deploy') {
             sh 'chmod u+x ./ci/deploy.sh'
             sh './ci/deploy.sh'
