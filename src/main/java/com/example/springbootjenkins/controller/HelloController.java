@@ -10,4 +10,9 @@ public class HelloController {
     public String hello() {
         return "hello world";
     }
+
+    @GetMapping("/hooks")
+    public String hooks() {
+        return "this is github hooks";
+    }
 }
